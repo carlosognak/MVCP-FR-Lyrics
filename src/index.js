@@ -1,4 +1,5 @@
 // Makeshift carousel function that gets invoked with the Index to start it off, then the callback increments the index to recursively invoke the same function. Works even in IE11!
+
 var testimonialItems = document.querySelectorAll(".item label");
 var timer;
 function cycleTestimonials(index) {
@@ -53,7 +54,9 @@ function cycleTestimonials(index) {
 //cycleTestimonials(0);
 
 // Code à exécuter quand le formulaire de chargement de lyrics est exécuté
+
 function charger_lyrics() {
+
   var texte = document.getElementById("lyrics").value;
 
   var my_random_id = Math.random();
@@ -86,4 +89,5 @@ function charger_lyrics() {
   ul.appendChild(li);
 
   return false;
+  
 }
